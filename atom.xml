@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-16T07:40:11.179Z</updated>
+  <updated>2021-08-17T09:15:58.504Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/08/10/dd/"/>
     <id>http://example.com/2021/08/10/dd/</id>
     <published>2021-08-10T08:15:32.000Z</published>
-    <updated>2021-08-16T07:40:11.179Z</updated>
+    <updated>2021-08-17T09:15:58.504Z</updated>
     
     <content type="html"><![CDATA[<p><strong>yeah yeah</strong></p><p><code>print(&quot;hello&quot;)</code></p><p>$$\sum_{n=1}^{100}n$$ </p>]]></content>
     
@@ -33,23 +33,6 @@
 &lt;p&gt;$$\sum_{n=1}^{100}n$$ &lt;/p&gt;
 </summary>
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hexo Front-matter</title>
-    <link href="http://example.com/2021/08/09/hhh/"/>
-    <id>http://example.com/2021/08/09/hhh/</id>
-    <published>2021-08-09T08:52:56.000Z</published>
-    <updated>2021-08-16T09:51:04.472Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="hexo-Front-matter"><a href="#hexo-Front-matter" class="headerlink" title="hexo Front-matter"></a>hexo Front-matter</h1><p>参考</p><ul><li><a href="https://guides.github.com/features/mastering-markdown/">MasteringMarkdown</a></li><li><a href="https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/markdown-basics">MPE</a></li><li><a href="https://butterfly.js.org/posts/4aa8abbe/#%E7%A4%BE%E4%BA%A4%E5%9C%96%E6%A8%99">Butterfly theme</a></li></ul><hr><ol><li><p><em>基本配置todo</em> </p></li><li><p>主页文章节选(自动节选和文章页description)</p><ul><li>description： 只显示description</li><li>both： 优先选择description，如果没有配置description，则显示自动节选的内容</li><li>auto_excerpt：只显示自动节选</li><li>false： 不显示文章内容</li></ul></li><li><p>文章置顶</p></li></ol>]]></content>
-    
-    
-    <summary type="html">关于Front-matter的一些劳什子</summary>
     
     
     
