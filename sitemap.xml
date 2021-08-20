@@ -2,28 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2021/08/19/numpy/</loc>
+    <loc>http://hanicy.com/catagories/index.html</loc>
+    
+    <lastmod>2021-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/tags/index.html</loc>
+    
+    <lastmod>2021-08-20</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/2021/08/19/numpy/</loc>
     
     <lastmod>2021-08-19</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2021/08/09/hhh/</loc>
+    <loc>http://hanicy.com/2021/08/09/hhh/</loc>
     
     <lastmod>2021-08-17</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/about/index.html</loc>
+    <loc>http://hanicy.com/about/index.html</loc>
     
     <lastmod>2021-08-11</lastmod>
     
   </url>
   
   <url>
-    <loc>http://example.com/2021/08/09/hello-world/</loc>
+    <loc>http://hanicy.com/2021/08/09/hello-world/</loc>
     
     <lastmod>1985-10-26</lastmod>
     
@@ -31,30 +45,30 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
-    <lastmod>2021-08-19</lastmod>
+    <loc>http://hanicy.com/</loc>
+    <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
 
   
   <url>
-    <loc>http://example.com/tags/python/</loc>
-    <lastmod>2021-08-19</lastmod>
+    <loc>http://hanicy.com/tags/Hexo/</loc>
+    <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Hexo/</loc>
-    <lastmod>2021-08-19</lastmod>
+    <loc>http://hanicy.com/tags/Front-matter/</loc>
+    <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/Front-matter/</loc>
-    <lastmod>2021-08-19</lastmod>
+    <loc>http://hanicy.com/tags/python/</loc>
+    <lastmod>2021-08-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
