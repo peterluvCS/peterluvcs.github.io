@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hanicy.com/2021/11/11/c-sharp/</loc>
+    
+    <lastmod>2022-01-05</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://hanicy.com/categories/index.html</loc>
     
     <lastmod>2022-01-05</lastmod>
@@ -67,20 +74,6 @@
 
   
   <url>
-    <loc>http://hanicy.com/tags/Web/</loc>
-    <lastmod>2022-01-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://hanicy.com/tags/CSS/</loc>
-    <lastmod>2022-01-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://hanicy.com/tags/C/</loc>
     <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
@@ -95,7 +88,14 @@
   </url>
   
   <url>
-    <loc>http://hanicy.com/tags/python/</loc>
+    <loc>http://hanicy.com/tags/Web/</loc>
+    <lastmod>2022-01-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/tags/CSS/</loc>
     <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -115,17 +115,24 @@
     <priority>0.6</priority>
   </url>
   
+  <url>
+    <loc>http://hanicy.com/tags/python/</loc>
+    <lastmod>2022-01-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
 
   
   <url>
-    <loc>http://hanicy.com/categories/cs/</loc>
+    <loc>http://hanicy.com/categories/lab/</loc>
     <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://hanicy.com/categories/lab/</loc>
+    <loc>http://hanicy.com/categories/cs/</loc>
     <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
