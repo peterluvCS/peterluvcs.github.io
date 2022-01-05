@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://hanicy.com/2021/10/06/Web%E6%8A%80%E6%9C%AF%E4%B9%8BCSS/</loc>
+    <loc>http://hanicy.com/categories/index.html</loc>
     
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-01-05</lastmod>
     
   </url>
   
   <url>
     <loc>http://hanicy.com/2021/09/28/Web%E6%8A%80%E6%9C%AF%E4%B9%8BHTML/</loc>
     
-    <lastmod>2021-10-12</lastmod>
+    <lastmod>2021-11-21</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/2021/11/11/C#/</loc>
+    
+    <lastmod>2021-11-17</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/about/index.html</loc>
+    
+    <lastmod>2021-11-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/2021/11/08/cate/</loc>
+    
+    <lastmod>2021-11-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/2021/10/06/Web%E6%8A%80%E6%9C%AF%E4%B9%8BCSS/</loc>
+    
+    <lastmod>2021-11-08</lastmod>
     
   </url>
   
@@ -37,23 +65,9 @@
   </url>
   
   <url>
-    <loc>http://hanicy.com/catagories/index.html</loc>
-    
-    <lastmod>2021-08-20</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://hanicy.com/tags/index.html</loc>
     
     <lastmod>2021-08-20</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://hanicy.com/about/index.html</loc>
-    
-    <lastmod>2021-08-11</lastmod>
     
   </url>
   
@@ -67,7 +81,7 @@
 
   <url>
     <loc>http://hanicy.com/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -75,46 +89,67 @@
   
   <url>
     <loc>http://hanicy.com/tags/Web/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hanicy.com/tags/CSS/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-01-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/tags/C/</loc>
+    <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hanicy.com/tags/Hexo/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hanicy.com/tags/Front-matter/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hanicy.com/tags/HTML/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://hanicy.com/tags/python/</loc>
-    <lastmod>2021-10-25</lastmod>
+    <lastmod>2022-01-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
 
+  
+  <url>
+    <loc>http://hanicy.com/categories/cs/</loc>
+    <lastmod>2022-01-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/categories/lab/</loc>
+    <lastmod>2022-01-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
   
 </urlset>
