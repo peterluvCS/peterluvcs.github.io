@@ -60,13 +60,6 @@
 
   
   <url>
-    <loc>http://hanicy.com/tags/C/</loc>
-    <lastmod>2022-01-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://hanicy.com/tags/Web/</loc>
     <lastmod>2022-01-09</lastmod>
     <changefreq>daily</changefreq>
@@ -75,6 +68,13 @@
   
   <url>
     <loc>http://hanicy.com/tags/CSS/</loc>
+    <lastmod>2022-01-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/tags/C/</loc>
     <lastmod>2022-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -97,14 +97,14 @@
 
   
   <url>
-    <loc>http://hanicy.com/categories/lab/</loc>
+    <loc>http://hanicy.com/categories/cs/</loc>
     <lastmod>2022-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://hanicy.com/categories/cs/</loc>
+    <loc>http://hanicy.com/categories/lab/</loc>
     <lastmod>2022-01-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
