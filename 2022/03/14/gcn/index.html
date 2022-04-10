@@ -18,9 +18,25 @@
   <meta name="author" content="petertang">
   <meta name="keywords" content="">
   
-  <title>归档 - Peter&#39;s Blog</title>
+  <title>推荐系统中的图神经网路 - Peter&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -49,7 +65,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -200,9 +216,37 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="推荐系统中的图神经网路">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-03-14 15:18" pubdate>
+        2022年3月14日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      354 字
+    </span>
+  
+
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -215,40 +259,111 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 6 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2022</p>
-    
-    <a href="/2022/01/09/android/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">android（一）应用基础知识</span>
-      <time style="float: right;">01-09</time>
-    </a>
-  
-</div>
 
-
-
-
-
-              </div>
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">推荐系统中的图神经网路</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：12 天前
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p>gnn图神经网络</p>
+<p>gat图注意力网络</p>
+<p>gcn 图卷积网络</p>
+<h2 id="什么是GNN"><a href="#什么是GNN" class="headerlink" title="什么是GNN"></a>什么是GNN</h2><ol>
+<li>CNN: 通过卷积得到下一层的feature map</li>
+<li>在图结构中，通过对邻居节点的表示进行计算得到下一层feature map，再利用传播过程所得到的各层表示来进一步完成后续任务（例如节点分类/边预测/节点内积预测匹配度等等）</li>
+<li>根据结构设计不同，GNN模型可以划分为以下几种，RecGNN、ConvGNN、STGNN和GAE</li>
+</ol>
+<h2 id="为什么使用GNN"><a href="#为什么使用GNN" class="headerlink" title="为什么使用GNN"></a>为什么使用GNN</h2><ol>
+<li>一般推荐：将用户偏好视为静态的，学习用户和物品的静态表示</li>
+<li>序列化推荐：认为用户偏好随时间动态变化，根据交互序列来预测用户下一个可能喜欢的物品</li>
+</ol>
+<p>除了数据方面，对于具体的学习过程而言，GNN具有以下优点 ：</p>
+<ul>
+<li>对于 general recommendation：GNN可以通过节点聚合显式地编码协同信号来增强用户和物品的表示学习能力，相比与其他模型，GNN对多跳信息的建模更加灵活方便。</li>
+<li>对于 sequential recommendation：将序列数据转换为序列图可以更灵活地进行项目选择的原始转换，并且，GNN可以通过环的结构捕获隐含在顺序行为中的复杂用户偏好。</li>
+</ul>
+<h2 id="推荐系统中的GNN分类"><a href="#推荐系统中的GNN分类" class="headerlink" title="推荐系统中的GNN分类"></a>推荐系统中的GNN分类</h2>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/lab/">lab</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/dl/">dl</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/01/09/android/">
+                        <span class="hidden-mobile">android（一）应用基础知识</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -352,9 +467,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 
