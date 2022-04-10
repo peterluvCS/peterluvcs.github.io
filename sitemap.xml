@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://hanicy.com/2022/04/10/gnn-RS/</loc>
+    
+    <lastmod>2022-04-10</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://hanicy.com/2022/03/14/gcn/</loc>
     
     <lastmod>2022-03-29</lastmod>
@@ -95,13 +102,6 @@
   </url>
   
   <url>
-    <loc>http://hanicy.com/tags/android/</loc>
-    <lastmod>2022-04-10</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://hanicy.com/tags/C/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>daily</changefreq>
@@ -109,7 +109,28 @@
   </url>
   
   <url>
+    <loc>http://hanicy.com/tags/android/</loc>
+    <lastmod>2022-04-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://hanicy.com/tags/dl/</loc>
+    <lastmod>2022-04-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/tags/GNN/</loc>
+    <lastmod>2022-04-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/tags/Recommender-Systems/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -140,6 +161,13 @@
   
   <url>
     <loc>http://hanicy.com/categories/cs/android/</loc>
+    <lastmod>2022-04-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://hanicy.com/categories/lab/paper/</loc>
     <lastmod>2022-04-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

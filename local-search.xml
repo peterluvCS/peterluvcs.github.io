@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Graph Neural Networks for Recommender Systems</title>
+    <link href="/2022/04/10/gnn-RS/"/>
+    <url>/2022/04/10/gnn-RS/</url>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/tsinghua-fib-lab/GNN-Recommender-Systems">代表性论文及其代码库</a> </p><p>从四个角度对推荐系统的研究进行了分类：阶段、场景、目标和应用</p><p><img src="/.com//myblog\myblog\source_posts\fourperspectives.png" alt="four perspectives"></p><h2 id="BG"><a href="#BG" class="headerlink" title="BG"></a>BG</h2>]]></content>
+    
+    
+    <categories>
+      
+      <category>lab</category>
+      
+      <category>paper</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>GNN</tag>
+      
+      <tag>Recommender Systems</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>推荐系统中的图神经网路</title>
     <link href="/2022/03/14/gcn/"/>
     <url>/2022/03/14/gcn/</url>

@@ -6,7 +6,7 @@
   <link href="http://hanicy.com/atom.xml" rel="self"/>
   
   <link href="http://hanicy.com/"/>
-  <updated>2022-03-29T14:31:21.909Z</updated>
+  <updated>2022-04-10T11:57:40.666Z</updated>
   <id>http://hanicy.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Graph Neural Networks for Recommender Systems</title>
+    <link href="http://hanicy.com/2022/04/10/gnn-RS/"/>
+    <id>http://hanicy.com/2022/04/10/gnn-RS/</id>
+    <published>2022-04-10T11:16:42.000Z</published>
+    <updated>2022-04-10T11:57:40.666Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/tsinghua-fib-lab/GNN-Recommender-Systems">代表性论文及其代码库</a> </p><p>从四个角度对推荐系统的研究进行了分类：阶段、场景、目标和应用</p><p><img src="/.com//myblog\myblog\source_posts\fourperspectives.png" alt="four perspectives"></p><h2 id="BG"><a href="#BG" class="headerlink" title="BG"></a>BG</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/tsinghua-fib-lab/GNN-Recommender-Systems&quot;&gt;代表性论文及其代码库&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;从四个角度对推荐系统的研究进行了分类：阶段、场景、目标和应用&lt;/p&gt;
+&lt;p&gt;&lt;img s</summary>
+      
+    
+    
+    
+    <category term="lab" scheme="http://hanicy.com/categories/lab/"/>
+    
+    <category term="paper" scheme="http://hanicy.com/categories/lab/paper/"/>
+    
+    
+    <category term="GNN" scheme="http://hanicy.com/tags/GNN/"/>
+    
+    <category term="Recommender Systems" scheme="http://hanicy.com/tags/Recommender-Systems/"/>
+    
+  </entry>
   
   <entry>
     <title>推荐系统中的图神经网路</title>
