@@ -238,7 +238,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      828 字
+      971 字
     </span>
   
 
@@ -273,7 +273,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：8 分钟前
+                  本文最后更新于：几秒前
                 
               </p>
             
@@ -335,7 +335,18 @@
 <li><p> 监督信号：监督信号在收集的数据中通常是稀疏的，而基于 GNN 的模型可以在表示学习过程中利用<strong>半监督信号</strong>来缓解这个问题。</p>
 </li>
 </ul>
+<h2 id="CHALLENGES"><a href="#CHALLENGES" class="headerlink" title="CHALLENGES"></a>CHALLENGES</h2><h3 id="1-图构建"><a href="#1-图构建" class="headerlink" title="1. 图构建"></a>1. 图构建</h3><p>两个任务：将数据输入构建为图形结构数据； 将推荐目标重新组织为图上的任务。</p>
+<p><em>//TODO 表示学习，节点嵌入</em></p>
+<ul>
+<li>节点</li>
+<li>边</li>
+</ul>
+<h3 id="2-网络设计"><a href="#2-网络设计" class="headerlink" title="2. 网络设计"></a>2. 网络设计</h3><p>传播层，如何选择路径，聚合函数也有多种选择</p>
+<h3 id="3-模型优化"><a href="#3-模型优化" class="headerlink" title="3. 模型优化"></a>3. 模型优化</h3><p>BPR loss, 即让正样本和负样本的得分之差尽可能达到最大</p>
+<img src="/2022/04/10/gnn-RS/bprloss.png" srcset="/img/loading.gif" lazyload class title="BPR loss">
 
+<p>数据采样。 在基于 GNN 的推荐中，要对正项或负项进行采样，采样方式高度依赖于图结构</p>
+<h3 id="4-计算效率"><a href="#4-计算效率" class="headerlink" title="4. 计算效率"></a>4. 计算效率</h3><h2 id="EXISTING-METHODS"><a href="#EXISTING-METHODS" class="headerlink" title="EXISTING METHODS"></a>EXISTING METHODS</h2>
             </div>
             <hr>
             <div>
