@@ -238,7 +238,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      354 字
+      504 字
     </span>
   
 
@@ -273,7 +273,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：14 天前
+                  本文最后更新于：几秒前
                 
               </p>
             
@@ -281,12 +281,14 @@
               <p>gnn图神经网络</p>
 <p>gat图注意力网络</p>
 <p>gcn 图卷积网络</p>
-<h2 id="什么是GNN"><a href="#什么是GNN" class="headerlink" title="什么是GNN"></a>什么是GNN</h2><ol>
+<h2 id="什么是gnn">什么是GNN</h2>
+<ol type="1">
 <li>CNN: 通过卷积得到下一层的feature map</li>
 <li>在图结构中，通过对邻居节点的表示进行计算得到下一层feature map，再利用传播过程所得到的各层表示来进一步完成后续任务（例如节点分类/边预测/节点内积预测匹配度等等）</li>
 <li>根据结构设计不同，GNN模型可以划分为以下几种，RecGNN、ConvGNN、STGNN和GAE</li>
 </ol>
-<h2 id="为什么使用GNN"><a href="#为什么使用GNN" class="headerlink" title="为什么使用GNN"></a>为什么使用GNN</h2><ol>
+<h2 id="为什么使用gnn">为什么使用GNN</h2>
+<ol type="1">
 <li>一般推荐：将用户偏好视为静态的，学习用户和物品的静态表示</li>
 <li>序列化推荐：认为用户偏好随时间动态变化，根据交互序列来预测用户下一个可能喜欢的物品</li>
 </ol>
@@ -295,7 +297,43 @@
 <li>对于 general recommendation：GNN可以通过节点聚合显式地编码协同信号来增强用户和物品的表示学习能力，相比与其他模型，GNN对多跳信息的建模更加灵活方便。</li>
 <li>对于 sequential recommendation：将序列数据转换为序列图可以更灵活地进行项目选择的原始转换，并且，GNN可以通过环的结构捕获隐含在顺序行为中的复杂用户偏好。</li>
 </ul>
-<h2 id="推荐系统中的GNN分类"><a href="#推荐系统中的GNN分类" class="headerlink" title="推荐系统中的GNN分类"></a>推荐系统中的GNN分类</h2>
+<h2 id="图信号处理">图信号处理</h2>
+<p>图信号处理基本理论延伸到GCN中</p>
+<ol type="1">
+<li>拉普拉斯矩阵： <span class="math display">\[
+L = D - A
+\]</span></li>
+</ol>
+<p><span class="math display">\[
+D_{ii}=\sum_j{A{ij}} \text{    表示节点}vi\text{的度}
+\]</span></p>
+<p>​ 元素级别定义： <span class="math display">\[
+L_{ij}=
+\begin{cases}
+deg(v_i) &amp;\text{if }i=j\\
+-1 &amp;\text{if }e_{ij} \in E\\
+0 &amp;\text{otherwise}
+\end{cases}
+\]</span></p>
+<p>​ 正则化形式: <span class="math display">\[
+L_{sym}=D^{-1/2}LD^{1/2}
+\]</span> ​ 元素级别定义： <span class="math display">\[
+L_{sym}[i,j]=
+\begin{cases}
+1 &amp;\text{if }i=j\\
+\frac{-1}{\sqrt{deg(v_i)deg(v_j)}} &amp;\text{if }e_{ij} \in E\\
+0 &amp;\text{otherwise}
+\end{cases}
+\]</span></p>
+<ol start="2" type="1">
+<li><p>图傅里叶变换</p>
+<p>将拉普拉斯矩阵正交对角化 <span class="math display">\[
+L = D - A = V \Lambda V^T
+\]</span> 图傅里叶变换： <span class="math display">\[
+\hat{x}=V^Tx
+\]</span></p></li>
+</ol>
+
             </div>
             <hr>
             <div>
@@ -331,7 +369,7 @@
                     
                       <a href="/2022/04/10/gnn-RS/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Graph Neural Networks for Recommender Systems</span>
+                        <span class="hidden-mobile">Graph Neural Networks for Recommender Systems | Chen Gao</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -512,6 +550,45 @@
 
 
 
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
+
+  
 
 
 

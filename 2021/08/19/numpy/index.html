@@ -238,7 +238,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      725 字
+      723 字
     </span>
   
 
@@ -278,95 +278,96 @@
               </p>
             
             <div class="markdown-body">
-              <h1 id="NumPy"><a href="#NumPy" class="headerlink" title="NumPy"></a>NumPy</h1><h2 id="NumPy简介"><a href="#NumPy简介" class="headerlink" title="NumPy简介"></a>NumPy简介</h2><p>维基百科是这样说的</p>
+              <h1 id="numpy">NumPy</h1>
+<h2 id="numpy简介">NumPy简介</h2>
+<p>维基百科是这样说的</p>
 <blockquote>
 <p>NumPy是Python语言的一个扩展程序库。<strong>支持高阶大量的维度数组与矩阵运算，此外也针对数组运算提供大量的数学函数库。</strong>NumPy的前身Numeric最早是由Jim Hugunin与其它协作者共同开发，2005年，Travis Oliphant在Numeric中结合了另一个同性质的程序库Numarray的特色，并加入了其它扩展而开发了NumPy。NumPy为开放源代码并且由许多协作者共同维护开发。</p>
 <p>NumPy提供了与MATLAB相似的功能与操作方式，因为两者皆为解释型语言，并且都可以让用户在针对数组或矩阵运算时提供较标量运算更快的性能。两者相较之下，MATLAB提供了大量的扩展工具箱（例如Simulink）；而NumPy则是根基于Python这个更现代、完整并且开放源代码的编程语言之上。此外NumPy也可以结合其它的Python扩展库。例如SciPy，这个库提供了更多与MATLAB相似的功能；以及Matplotlib，这是一个与MATLAB内置绘图功能类似的库。而从本质上来说，<strong>NumPy与MATLAB同样是利用BLAS与LAPACK来提供高效率的线性代数运算。</strong></p>
 </blockquote>
 <p>~~<em>本菜鸡上学期摸鱼没听过python课，借着暑假学习下numpy和pandas来准备九月的数模国赛</em></p>
-<h2 id="NumPy-数组对象-ndarray"><a href="#NumPy-数组对象-ndarray" class="headerlink" title="NumPy 数组对象 ndarray"></a>NumPy 数组对象 ndarray</h2><ol>
+<h2 id="numpy-数组对象-ndarray">NumPy 数组对象 ndarray</h2>
+<ol type="1">
 <li>属性</li>
 </ol>
 <table>
 <thead>
-<tr>
-<th align="center">属性</th>
-<th align="center">说明</th>
+<tr class="header">
+<th style="text-align: center;">属性</th>
+<th style="text-align: center;">说明</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center"><code>ndim</code></td>
-<td align="center">返回int，数组<strong>维数</strong></td>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>ndim</code></td>
+<td style="text-align: center;">返回int，数组<strong>维数</strong></td>
 </tr>
-<tr>
-<td align="center"><code>size</code></td>
-<td align="center">返回int，数组<strong>元素总数</strong>，即每一维长度的乘积</td>
+<tr class="even">
+<td style="text-align: center;"><code>size</code></td>
+<td style="text-align: center;">返回int，数组<strong>元素总数</strong>，即每一维长度的乘积</td>
 </tr>
-<tr>
-<td align="center"><code>dtype</code></td>
-<td align="center">返回data-type，数组<strong>成员类型</strong></td>
+<tr class="odd">
+<td style="text-align: center;"><code>dtype</code></td>
+<td style="text-align: center;">返回data-type，数组<strong>成员类型</strong></td>
 </tr>
-<tr>
-<td align="center"><code>shape</code></td>
-<td align="center">返回 tuple，表示数组的<strong>尺寸</strong>，对于 n 行 m 列的矩阵，形状为(n,m)</td>
+<tr class="even">
+<td style="text-align: center;"><code>shape</code></td>
+<td style="text-align: center;">返回 tuple，表示数组的<strong>尺寸</strong>，对于 n 行 m 列的矩阵，形状为(n,m)</td>
 </tr>
-<tr>
-<td align="center"><code>itemsize</code></td>
-<td align="center">返回 int，表示数组的<strong>每个元素的大小（</strong>以字节为单位）</td>
+<tr class="odd">
+<td style="text-align: center;"><code>itemsize</code></td>
+<td style="text-align: center;">返回 int，表示数组的<strong>每个元素的大小（</strong>以字节为单位）</td>
 </tr>
-<tr>
-<td align="center">2. 创建数组对象</td>
-<td align="center"></td>
-</tr>
-</tbody></table>
+</tbody>
+</table>
+<ol start="2" type="1">
+<li>创建数组对象</li>
+</ol>
 <ul>
 <li>创建数组并查看数组属性</li>
 </ul>
-<p><code>numpy.array(object, dtype=None, copy=True, order=&#39;K&#39;, subok=False, ndmin=0)  //注意是array不是ndarry</code> </p>
+<p><code>numpy.array(object, dtype=None, copy=True, order='K', subok=False, ndmin=0)  //注意是array不是ndarry</code></p>
 <table>
 <thead>
-<tr>
-<th align="center">参数</th>
-<th align="center">说明</th>
+<tr class="header">
+<th style="text-align: center;">参数</th>
+<th style="text-align: center;">说明</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center"><code>object</code></td>
-<td align="center">接收<strong>array</strong>，表示想要创建的数组。<em>无默认</em></td>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>object</code></td>
+<td style="text-align: center;">接收<strong>array</strong>，表示想要创建的数组。<em>无默认</em></td>
 </tr>
-<tr>
-<td align="center"><code>dtype</code></td>
-<td align="center">接收data-type，表示数组所需的数据类型。如果未给定，则选择保存对象所需的最小类型。<em>默认为None</em>。</td>
+<tr class="even">
+<td style="text-align: center;"><code>dtype</code></td>
+<td style="text-align: center;">接收data-type，表示数组所需的数据类型。如果未给定，则选择保存对象所需的最小类型。<em>默认为None</em>。</td>
 </tr>
-<tr>
-<td align="center"><code>ndmin</code></td>
-<td align="center">接收int。指定生成数组应该具有的最小维数。<em>默认为None</em></td>
+<tr class="odd">
+<td style="text-align: center;"><code>ndmin</code></td>
+<td style="text-align: center;">接收int。指定生成数组应该具有的最小维数。<em>默认为None</em></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <ul>
 <li><p>重新设置数组的 <code>shape</code> 属性</p>
-<p><code>arr.shape = a,b  //总数必须不变，即不允许截断</code></p>
-</li>
+<p><code>arr.shape = a,b  //总数必须不变，即不允许截断</code></p></li>
 <li><p>使用 <code>arange</code> 函数创建数组</p>
-<p><code>arange(begin,end,等分量)   // [begin,end)</code></p>
-</li>
+<p><code>arange(begin,end,等分量)   // [begin,end)</code></p></li>
 <li><p>使用 <code>linspace</code> 函数创建等差数组 (begin,end,num)</p>
 <p>公差d = (end - start) / (num - 1)</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs python">&gt;b = np.linspace(<span class="hljs-number">0</span>,<span class="hljs-number">1</span>,<span class="hljs-number">9</span>)<br>[<span class="hljs-number">0.</span>    <span class="hljs-number">0.125</span> <span class="hljs-number">0.25</span>  <span class="hljs-number">0.375</span> <span class="hljs-number">0.5</span>   <span class="hljs-number">0.625</span> <span class="hljs-number">0.75</span>  <span class="hljs-number">0.875</span> <span class="hljs-number">1.</span>   ]<br></code></pre></td></tr></table></figure></li>
-<li><p>使用 <code>logspace</code> 函数创建<strong>等比</strong>数列</p>
-</li>
-<li><p><code>zeros</code>函数 全0数组</p>
-</li>
-<li><p><code>eye</code>函数创建<strong>单位</strong>矩阵</p>
-</li>
-<li><p><code>diag</code>函数创建<strong>对角</strong>矩阵</p>
-</li>
-<li><p><code>ones</code>函数创建<strong>全1</strong>数组</p>
-</li>
+<li><p>使用 <code>logspace</code> 函数创建<strong>等比</strong>数列</p></li>
+<li><p><code>zeros</code>函数 全0数组</p></li>
+<li><p><code>eye</code>函数创建<strong>单位</strong>矩阵</p></li>
+<li><p><code>diag</code>函数创建<strong>对角</strong>矩阵</p></li>
+<li><p><code>ones</code>函数创建<strong>全1</strong>数组</p></li>
 </ul>
-<h2 id="NumPy-矩阵与通用函数"><a href="#NumPy-矩阵与通用函数" class="headerlink" title="NumPy 矩阵与通用函数"></a>NumPy 矩阵与通用函数</h2><h2 id="利用-NumPy-进行统计分析"><a href="#利用-NumPy-进行统计分析" class="headerlink" title="利用 NumPy 进行统计分析"></a>利用 NumPy 进行统计分析</h2><hr>
+<h2 id="numpy-矩阵与通用函数">NumPy 矩阵与通用函数</h2>
+<h2 id="利用-numpy-进行统计分析">利用 NumPy 进行统计分析</h2>
+<hr>
 <p>参考</p>
-<ol>
+<ol type="1">
 <li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/NumPy">维基百科numpy</a></li>
 </ol>
 
