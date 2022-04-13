@@ -273,7 +273,7 @@
             
               <p class="note note-info">
                 
-                  本文最后更新于：2 小时前
+                  本文最后更新于：几秒前
                 
               </p>
             
@@ -311,11 +311,16 @@
 <li><p>图构建：预先存在的图数据或从非结构化数据中抽象出图节点和边的概念</p></li>
 <li><p>网络设计: GNN 模型可以分为光谱模型和空间模型. <em>(how?图傅里叶变换)</em> 通过迭代收集邻域信息来捕获图节点和边之间的高阶相关性.这里“信息”表示为嵌入，即低维向量。</p>
 <ul>
-<li>GCN</li>
-<li>GraphSAGE</li>
-<li>GAT</li>
-<li>HetGNN</li>
-<li>HGNN</li>
+<li><p>GCN <span class="math display">\[
+H^{l+1}=\delta(\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}H^lW^l)
+\]</span></p></li>
+<li><p>GraphSAGE</p></li>
+<li><p>GAT</p>
+<p>自动学习节点互相的影响度</p>
+<p>通过注意力机制，对给定信息进行权重分配，权重高意味着要进行重点加工。为不同的节点指定不同的权重来聚合邻域特征（嵌入）</p>
+<img src="/2022/04/10/gnn-RS/gat.png" srcset="/img/loading.gif" lazyload class title="GAT"></li>
+<li><p>HetGNN</p></li>
+<li><p>HGNN</p></li>
 </ul>
 <img src="/2022/04/10/gnn-RS/modelscompare.png" srcset="/img/loading.gif" lazyload class title="compare models"></li>
 <li><p>模型优化：基于 GNN 的模型中的优化将 GNN 泛化的表示视为输入，将图结构（例如边、节点类）视为标签，并为训练定义<strong>损失函数</strong></p></li>
@@ -570,6 +575,45 @@
 
 
 
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
+
+  
 
 
 
