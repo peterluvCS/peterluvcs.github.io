@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Multi-behavior Recommendation with Graph Convolutional Networks | Bowen Jin</title>
+    <link href="/2022/04/16/MBGCN/"/>
+    <url>/2022/04/16/MBGCN/</url>
+    
+    <content type="html"><![CDATA[<h2 id="intro">INTRO</h2><p>传统推荐模型（协同过滤CF）只采用一种 user-item模型，面临严重的数据稀疏或冷启动问题</p><p>多行为推荐：通过辅助行为，来帮助预测用户未来对目标行为的交互</p><p>现有的研究采用：</p><ol type="1"><li>在采样过程中利用多行为数据，并建立多采样对来加强模型学习过程</li><li>尝试设计模型以捕获多行为信息</li></ol><p>现有研究的局限：</p><ol type="1"><li><p><strong>多种行为的强度</strong>没有得到充分利用。多反馈推荐模型需要从数据中揭示和进一步利用不同行为类型的各种强度。</p></li><li><p>没有考虑多种行为的<strong>语义关系</strong>。每种行为下的交互项之间应该有一些共同的特征或特殊关系，可替换或互补</p></li></ol><p>如何解决：构建一个基于多种行为数据的统一异构图</p><ol type="1"><li>将用户/项目表示为节点</li><li>特定类型的user-item项目反馈表示为图的多种类型的边</li><li>...强度和...语义建模问题转向对异构边和项目用户建模 -项目元路径</li></ol><h2 id="problem-formulation">PROBLEM FORMULATION</h2><p>交互矩阵元素级别定义： <span class="math display">\[y_{ui}^t =\begin{cases}1 &amp;\text{if u has interacted with i under behavior t}\\0 &amp;\text{otherwise}\end{cases}\]</span> <em><strong>Note</strong>:对行为的时间顺序或强度顺序没有限制</em></p><p>Input：T类行为的用户-项目交互数据，{<span class="math display">\[{Y^1, Y^2,..., Y^T}\]</span>}. Output：一个推荐模型，用于估计用户 u 在第 T 次行为（即目标行为）下与项目 i 交互的概率</p><h2 id="methodology">METHODOLOGY</h2><img src="/2022/04/16/MBGCN/model.png" class title="MBGCN model"><p>四个组件：</p><ol type="1"><li>为用户和项目嵌入提供初始化的共享层</li><li>user-item传播层，用于学习每个行为的<strong>强度</strong>，并同时基于多行为user-item交互提取协同过滤信号</li><li>一个item-item传播层来细化item的特殊关系，或者换句话说，基于行为类型的<strong>行为语义</strong></li><li>联合预测模块</li></ol>]]></content>
+    
+    
+    <categories>
+      
+      <category>lab</category>
+      
+      <category>paper</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>GNN</tag>
+      
+      <tag>Recommender Systems</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Graph Neural Networks for Recommender Systems | Chen Gao</title>
     <link href="/2022/04/10/gnn-RS/"/>
     <url>/2022/04/10/gnn-RS/</url>
