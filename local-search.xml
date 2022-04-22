@@ -4,6 +4,35 @@
   
   
   <entry>
+    <title>Session-based Recommendation with Graph Neural Networks | Shu Wu</title>
+    <link href="/2022/04/22/SRGCN/"/>
+    <url>/2022/04/22/SRGCN/</url>
+    
+    <content type="html"><![CDATA[<p><a href="https://github.com/CRIPAC-DIG/SR-GNN">参考源代码</a></p><h2 id="intro">INTRO</h2><p>previous work: Markov chains, Recurrent Neural Networks (RNNs)</p><p>提出基于GNN的SBR方法，sessions被建模成图结构数据，GNN可以捕捉items间复杂的过渡，每一session利用注意网络由全局偏好和当前兴趣组成.</p><img src="/2022/04/22/SRGCN/framework.png" class title="Framework"><p>首先将所有<strong>会话序列建模</strong>为会话图。 然后，将每个会话图逐个处理，并通过<strong>门控图神经网络</strong>获得生成的节点向量。 之后，使用<strong>注意力网络</strong>将每个会话表示为该会话的全局偏好和当前兴趣的组合。 最后，<strong>预测</strong>每个项目是每个会话的下一次点击项目的概率。</p><h2 id="the-proposed-method">The Proposed Method</h2><h3 id="constructing-session-graphs">Constructing Session Graphs</h3><h3 id="learning-item-embeddings-on-session-graphs">Learning Item Embeddings on Session Graphs</h3><h3 id="generating-session-embeddings">Generating Session Embeddings</h3><h3 id="making-recommendation-and-model-training">Making Recommendation and Model Training</h3>]]></content>
+    
+    
+    <categories>
+      
+      <category>lab</category>
+      
+      <category>paper</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>SR-GNN</tag>
+      
+      <tag>Recommender Systems</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Multi-behavior Recommendation with Graph Convolutional Networks | Bowen Jin</title>
     <link href="/2022/04/16/MBGCN/"/>
     <url>/2022/04/16/MBGCN/</url>
@@ -22,9 +51,9 @@
     
     <tags>
       
-      <tag>GNN</tag>
-      
       <tag>Recommender Systems</tag>
+      
+      <tag>GNN</tag>
       
     </tags>
     
@@ -51,9 +80,9 @@
     
     <tags>
       
-      <tag>GNN</tag>
-      
       <tag>Recommender Systems</tag>
+      
+      <tag>GNN</tag>
       
     </tags>
     

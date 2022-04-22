@@ -18,9 +18,25 @@
   <meta name="author" content="petertang">
   <meta name="keywords" content="">
   
-  <title>归档 - Peter&#39;s Blog</title>
+  <title>Session-based Recommendation with Graph Neural Networks | Shu Wu - Peter&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
 
 
 
@@ -49,7 +65,7 @@
 
 
 <body>
-  <header style="height: 60vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -200,9 +216,37 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="归档">
+            <span class="h2" id="subtitle" title="Session-based Recommendation with Graph Neural Networks | Shu Wu">
               
             </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-04-22 14:28" pubdate>
+        2022年4月22日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      187 字
+    </span>
+  
+
+  
+
+  
+  
+</div>
 
             
           </div>
@@ -215,40 +259,109 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 9 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2021</p>
-    
-    <a href="/2021/11/11/c-sharp/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">c#</span>
-      <time style="float: right;">11-11</time>
-    </a>
-  
-</div>
 
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Session-based Recommendation with Graph Neural Networks | Shu Wu</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：几秒前
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p><a target="_blank" rel="noopener" href="https://github.com/CRIPAC-DIG/SR-GNN">参考源代码</a></p>
+<h2 id="intro">INTRO</h2>
+<p>previous work: Markov chains, Recurrent Neural Networks (RNNs)</p>
+<p>提出基于GNN的SBR方法，sessions被建模成图结构数据，GNN可以捕捉items间复杂的过渡，每一session利用注意网络由全局偏好和当前兴趣组成.</p>
+<img src="/2022/04/22/SRGCN/framework.png" srcset="/img/loading.gif" lazyload class title="Framework">
+<p>首先将所有<strong>会话序列建模</strong>为会话图。 然后，将每个会话图逐个处理，并通过<strong>门控图神经网络</strong>获得生成的节点向量。 之后，使用<strong>注意力网络</strong>将每个会话表示为该会话的全局偏好和当前兴趣的组合。 最后，<strong>预测</strong>每个项目是每个会话的下一次点击项目的概率。</p>
+<h2 id="the-proposed-method">The Proposed Method</h2>
+<h3 id="constructing-session-graphs">Constructing Session Graphs</h3>
+<h3 id="learning-item-embeddings-on-session-graphs">Learning Item Embeddings on Session Graphs</h3>
+<h3 id="generating-session-embeddings">Generating Session Embeddings</h3>
+<h3 id="making-recommendation-and-model-training">Making Recommendation and Model Training</h3>
 
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/lab/">lab</a>
+                    
+                      <a class="hover-with-bg" href="/categories/lab/paper/">paper</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/SR-GNN/">SR-GNN</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Recommender-Systems/">Recommender Systems</a>
+                    
+                  </div>
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/04/16/MBGCN/">
+                        <span class="hidden-mobile">Multi-behavior Recommendation with Graph Convolutional Networks | Bowen Jin</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -352,9 +465,15 @@
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
 
 
 
