@@ -18,7 +18,7 @@
   <meta name="author" content="petertang">
   <meta name="keywords" content="">
   
-  <title>Graph Neural Networks for Recommender Systems | Chen Gao - Peter&#39;s Blog</title>
+  <title>GRE - quantitative reasoning - Peter&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
 
@@ -216,7 +216,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Graph Neural Networks for Recommender Systems | Chen Gao">
+            <span class="h2" id="subtitle" title="GRE - quantitative reasoning">
               
             </span>
 
@@ -226,8 +226,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2022-04-10 19:16" pubdate>
-        2022年4月10日 晚上
+      <time datetime="2022-05-09 15:40" pubdate>
+        2022年5月9日 下午
       </time>
     </span>
   
@@ -238,7 +238,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      1.1k 字
+      195 字
     </span>
   
 
@@ -269,97 +269,78 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Graph Neural Networks for Recommender Systems | Chen Gao</h1>
+            <h1 style="display: none">GRE - quantitative reasoning</h1>
             
               <p class="note note-info">
                 
-                  本文最后更新于：10 分钟前
+                  本文最后更新于：几秒前
                 
               </p>
             
             <div class="markdown-body">
-              <p><a target="_blank" rel="noopener" href="https://github.com/tsinghua-fib-lab/GNN-Recommender-Systems">代表性论文及其代码库</a></p>
-<p>从四个角度对推荐系统的研究进行了分类：阶段、场景、目标和应用</p>
-<img src="/2022/04/10/gnn-RS/fourperspectives.png" srcset="/img/loading.gif" lazyload class title="fourperspectives">
-<h2 id="bg">BG</h2>
-<h3 id="推荐系统">1. 推荐系统</h3>
-<p>现代推荐系统三个阶段<em>stage</em>：</p>
+              <h1 id="quantitave-reasoning">QUANTITAVE REASONING</h1>
+<h2 id="arithmetic">Arithmetic</h2>
+<h3 id="整数integers">1.1 整数（integers）</h3>
 <ul>
-<li>匹配：核心任务是高效检索潜在相关项目，并实现用户兴趣的粗粒度建模</li>
-<li>排序：在匹配阶段之后，来自不同渠道的多个候选项目来源被合并到一个列表中，然后通过单个排名模型进行评分。</li>
-<li>再排序：去除某些项目或更改列表的顺序，以满足其他标准并满足业务需求</li>
+<li><p>因数（factor）/ 因子（divisor）倍数（multiple）</p></li>
+<li><p>最小公倍数least common multiple、最大公因数great common divisor</p></li>
+<li><p>商quotient 余数remainder</p></li>
+<li><p>A is divided by B &amp;&amp; A is divisible by B，后者表示能除尽，前者不一定</p></li>
+<li><p>奇数odd 偶数even</p></li>
+<li><p>质数prime 合数composite</p></li>
+<li><p>有理数rational numbers ### 1.2 分数（fraction）</p></li>
+<li><p>分子numerator 分母denominator</p></li>
+<li><p>倒数reciprocal</p></li>
+<li><p>带分数mixed fraction ### 1.3 幂指数和根</p></li>
+<li><p>指数exponent 底数base</p></li>
+<li><p>平方根square root 立方根cube root</p></li>
 </ul>
-<p>不同场景<em>scenario</em>：社交推荐、顺序推荐、会话推荐、捆绑推荐、跨域推荐和多行为推荐</p>
+<h3 id="小数decimals">1.4 小数（decimals）</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">数位digit</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">千位</td>
+<td style="text-align: center;">thousands digit</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">百位</td>
+<td style="text-align: center;">hundreds</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">十位</td>
+<td style="text-align: center;">tens</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>个位</strong></td>
+<td style="text-align: center;"><strong>one or units</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">十分位</td>
+<td style="text-align: center;">ten<strong>th</strong>s</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">百分位</td>
+<td style="text-align: center;">hundred<strong>th</strong>s</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">千分位</td>
+<td style="text-align: center;">thousand<strong>th</strong>s</td>
+</tr>
+</tbody>
+</table>
 <ul>
-<li><p>社交推荐：用户交互由自己的偏好和社会因素（社会影响力和社会同质性）共同决定。</p></li>
-<li><p>序列推荐：从这些行为序列中提取信息并预测用户的下一个交互项，</p></li>
-<li><p>基于会话的推荐SBR：用户档案和长期历史交互是不可用的，只提供来自匿名用户的短会话数据。SBR旨在使用给定的匿名行为会话数据预测下一个项目</p></li>
-<li><p>捆绑推荐：推荐项目组合供用户消费</p></li>
-<li><p>跨域推荐CDR：缓解冷启动和数据稀疏问题的一种很有前途的方法，分为两类，单目标（STCDR）和双目标（DTCDR）</p></li>
-<li><p>多行为推荐：用户在多种行为而不是仅一种行为下与推荐系统交互。对于每个用户𝑢和项目𝑣，假设有𝐾不同类型的行为{𝑦1，𝑦2，...，𝑦𝐾}。 对于第 𝑖 行为，如果用户有观察到的行为，则 𝑦𝑖 = 1，否则 𝑦𝑖 = 0。目标是提高对某类目标行为的预测准确率 𝑦𝑡。</p></li>
+<li>有限小数terminating decimal 循环小数repeating decimal（循环小数会在循环的位数上加一根横线）</li>
+<li>科学计数法scientific notation</li>
 </ul>
-<p>目标<em>objective</em>：准确性</p>
-<ul>
-<li>多样性 individual-level diversity &amp; system-level diversity.</li>
-<li>解释能力 generate per-suasive explanations for how and why the item is recommended to a specific user</li>
-<li>公平性 user fairness &amp; item fairness</li>
-</ul>
-<p>应用<em>application</em></p>
-<h3 id="图神经网络">2. 图神经网络</h3>
-<p>The rise of GNN mainly originates from the advancement of convolutional neural network (<strong>CNN</strong>) and graph representation learning (<strong>GRL</strong>)</p>
-<ul>
-<li><p>图构建：预先存在的图数据或从非结构化数据中抽象出图节点和边的概念</p></li>
-<li><p>网络设计: GNN 模型可以分为光谱模型和空间模型. <em>(how?图傅里叶变换)</em> 通过迭代收集邻域信息来捕获图节点和边之间的高阶相关性.这里“信息”表示为嵌入，即低维向量。</p>
-<ul>
-<li><p>GCN <span class="math display">\[
-H^{l+1}=\delta(\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}H^lW^l)
-\]</span></p></li>
-<li><p>GraphSAGE</p></li>
-<li><p>GAT</p>
-<p>自动学习节点互相的影响度</p>
-<p>通过注意力机制，对给定信息进行权重分配，权重高意味着要进行重点加工。为不同的节点指定不同的权重来聚合邻域特征（嵌入）</p>
-<img src="/2022/04/10/gnn-RS/gat.png" srcset="/img/loading.gif" lazyload class title="GAT"></li>
-<li><p>HetGNN</p></li>
-<li><p>HGNN</p></li>
-</ul>
-<img src="/2022/04/10/gnn-RS/modelscompare.png" srcset="/img/loading.gif" lazyload class title="compare models"></li>
-<li><p>模型优化：基于 GNN 的模型中的优化将 GNN 泛化的表示视为输入，将图结构（例如边、节点类）视为标签，并为训练定义<strong>损失函数</strong></p></li>
-</ul>
-<h3 id="why-are-gnns-required-for-recommender-systems">3. Why are GNNs required for recommender systems</h3>
-<ul>
-<li><p>结构数据： 将所有数据表示为图上的节点和边；可以获得用户、项目和其他特征的高质量嵌入</p></li>
-<li><p>高阶连通性：<strong>协同过滤</strong>效果可以自然地表示为图上的多跳邻居，并通过嵌入传播和聚合将其合并到学习的表示中。</p></li>
-<li><p>监督信号：监督信号在收集的数据中通常是稀疏的，而基于 GNN 的模型可以在表示学习过程中利用<strong>半监督信号</strong>来缓解这个问题。</p></li>
-</ul>
-<h2 id="challenges">CHALLENGES</h2>
-<h3 id="图构建">1. 图构建</h3>
-<p>两个任务：将数据输入构建为图形结构数据； 将推荐目标重新组织为图上的任务。</p>
-<p><em>//TODO 表示学习，节点嵌入</em></p>
-<ul>
-<li>节点</li>
-<li>边</li>
-</ul>
-<h3 id="网络设计">2. 网络设计</h3>
-<p>传播层，如何选择路径，聚合函数也有多种选择</p>
-<h3 id="模型优化">3. 模型优化</h3>
-<p>BPR loss, 即让正样本和负样本的得分之差尽可能达到最大</p>
-<img src="/2022/04/10/gnn-RS/bprloss.png" srcset="/img/loading.gif" lazyload class title="BPR loss">
-<p>数据采样。 在基于 GNN 的推荐中，要对正项或负项进行采样，采样方式高度依赖于图结构</p>
-<h3 id="计算效率">4. 计算效率</h3>
-<h2 id="existing-methods">EXISTING METHODS</h2>
-<h3 id="gnn-in-session-based-recommendation">GNN in Session-based Recommendation</h3>
-<ol type="1">
-<li><p>two challenges:</p>
-<ul>
-<li><p>how to model the item transition pattern in session data --&gt;item transitions</p></li>
-<li><p>how to activate user’s core interests from noisy data --&gt;the information propagation on the graph</p></li>
-</ul></li>
-</ol>
-<h3 id="gnn-in-multi-behavior-recommendation">GNN in Multi-behavior Recommendation</h3>
-<ul>
-<li>如何对多个行为与目标行为之间的关系进行建模，</li>
-<li>如何通过行为对项目的语义进行建模，</li>
-</ul>
+<h2 id="algebra">Algebra</h2>
+<h2 id="geometry">Geometry</h2>
+<h2 id="statistic">Statistic</h2>
 
             </div>
             <hr>
@@ -369,9 +350,7 @@ H^{l+1}=\delta(\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}H^lW^l)
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/lab/">lab</a>
-                    
-                      <a class="hover-with-bg" href="/categories/lab/paper/">paper</a>
+                      <a class="hover-with-bg" href="/categories/GRE/">GRE</a>
                     
                   </div>
                 
@@ -379,9 +358,7 @@ H^{l+1}=\delta(\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}H^lW^l)
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/GNN/">GNN</a>
-                    
-                      <a class="hover-with-bg" href="/tags/Recommender-Systems/">Recommender Systems</a>
+                      <a class="hover-with-bg" href="/tags/GRE/">GRE</a>
                     
                   </div>
                 
@@ -398,18 +375,12 @@ H^{l+1}=\delta(\hat{D}^{-\frac{1}{2}}\hat{A}\hat{D}^{-\frac{1}{2}}H^lW^l)
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/04/16/MBGCN/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Multi-behavior Recommendation with Graph Convolutional Networks | Bowen Jin</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/03/14/gcn/">
-                        <span class="hidden-mobile">推荐系统中的图神经网路</span>
+                      <a href="/2022/04/22/SRGCN/">
+                        <span class="hidden-mobile">Session-based Recommendation with Graph Neural Networks | Shu Wu</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
