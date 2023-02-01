@@ -3,11 +3,11 @@
   <title>Peter&#39;s Blog</title>
   
   <subtitle>Peter</subtitle>
-  <link href="http://hanicy.com/atom.xml" rel="self"/>
+  <link href="http://sucrose118.xyz/atom.xml" rel="self"/>
   
-  <link href="http://hanicy.com/"/>
+  <link href="http://sucrose118.xyz/"/>
   <updated>2022-05-16T06:49:07.765Z</updated>
-  <id>http://hanicy.com/</id>
+  <id>http://sucrose118.xyz/</id>
   
   <author>
     <name>petertang</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>GRE - quantitative reasoning</title>
-    <link href="http://hanicy.com/2022/05/09/quant/"/>
-    <id>http://hanicy.com/2022/05/09/quant/</id>
+    <link href="http://sucrose118.xyz/2022/05/09/quant/"/>
+    <id>http://sucrose118.xyz/2022/05/09/quant/</id>
     <published>2022-05-09T07:40:11.000Z</published>
     <updated>2022-05-16T06:49:07.765Z</updated>
     
@@ -36,17 +36,17 @@
     
     
     
-    <category term="GRE" scheme="http://hanicy.com/categories/GRE/"/>
+    <category term="GRE" scheme="http://sucrose118.xyz/categories/GRE/"/>
     
     
-    <category term="GRE" scheme="http://hanicy.com/tags/GRE/"/>
+    <category term="GRE" scheme="http://sucrose118.xyz/tags/GRE/"/>
     
   </entry>
   
   <entry>
     <title>Session-based Recommendation with Graph Neural Networks | Shu Wu</title>
-    <link href="http://hanicy.com/2022/04/22/SRGCN/"/>
-    <id>http://hanicy.com/2022/04/22/SRGCN/</id>
+    <link href="http://sucrose118.xyz/2022/04/22/SRGCN/"/>
+    <id>http://sucrose118.xyz/2022/04/22/SRGCN/</id>
     <published>2022-04-22T06:28:21.000Z</published>
     <updated>2022-04-23T14:22:00.452Z</updated>
     
@@ -62,21 +62,21 @@
     
     
     
-    <category term="lab" scheme="http://hanicy.com/categories/lab/"/>
+    <category term="lab" scheme="http://sucrose118.xyz/categories/lab/"/>
     
-    <category term="paper" scheme="http://hanicy.com/categories/lab/paper/"/>
+    <category term="paper" scheme="http://sucrose118.xyz/categories/lab/paper/"/>
     
     
-    <category term="Recommender Systems" scheme="http://hanicy.com/tags/Recommender-Systems/"/>
+    <category term="Recommender Systems" scheme="http://sucrose118.xyz/tags/Recommender-Systems/"/>
     
-    <category term="SR-GNN" scheme="http://hanicy.com/tags/SR-GNN/"/>
+    <category term="SR-GNN" scheme="http://sucrose118.xyz/tags/SR-GNN/"/>
     
   </entry>
   
   <entry>
     <title>Multi-behavior Recommendation with Graph Convolutional Networks | Bowen Jin</title>
-    <link href="http://hanicy.com/2022/04/16/MBGCN/"/>
-    <id>http://hanicy.com/2022/04/16/MBGCN/</id>
+    <link href="http://sucrose118.xyz/2022/04/16/MBGCN/"/>
+    <id>http://sucrose118.xyz/2022/04/16/MBGCN/</id>
     <published>2022-04-16T07:47:18.000Z</published>
     <updated>2022-04-19T16:00:58.334Z</updated>
     
@@ -94,21 +94,21 @@
     
     
     
-    <category term="lab" scheme="http://hanicy.com/categories/lab/"/>
+    <category term="lab" scheme="http://sucrose118.xyz/categories/lab/"/>
     
-    <category term="paper" scheme="http://hanicy.com/categories/lab/paper/"/>
+    <category term="paper" scheme="http://sucrose118.xyz/categories/lab/paper/"/>
     
     
-    <category term="GNN" scheme="http://hanicy.com/tags/GNN/"/>
+    <category term="GNN" scheme="http://sucrose118.xyz/tags/GNN/"/>
     
-    <category term="Recommender Systems" scheme="http://hanicy.com/tags/Recommender-Systems/"/>
+    <category term="Recommender Systems" scheme="http://sucrose118.xyz/tags/Recommender-Systems/"/>
     
   </entry>
   
   <entry>
     <title>Graph Neural Networks for Recommender Systems | Chen Gao</title>
-    <link href="http://hanicy.com/2022/04/10/gnn-RS/"/>
-    <id>http://hanicy.com/2022/04/10/gnn-RS/</id>
+    <link href="http://sucrose118.xyz/2022/04/10/gnn-RS/"/>
+    <id>http://sucrose118.xyz/2022/04/10/gnn-RS/</id>
     <published>2022-04-10T11:16:42.000Z</published>
     <updated>2022-05-09T08:17:04.088Z</updated>
     
@@ -124,21 +124,21 @@
     
     
     
-    <category term="lab" scheme="http://hanicy.com/categories/lab/"/>
+    <category term="lab" scheme="http://sucrose118.xyz/categories/lab/"/>
     
-    <category term="paper" scheme="http://hanicy.com/categories/lab/paper/"/>
+    <category term="paper" scheme="http://sucrose118.xyz/categories/lab/paper/"/>
     
     
-    <category term="GNN" scheme="http://hanicy.com/tags/GNN/"/>
+    <category term="GNN" scheme="http://sucrose118.xyz/tags/GNN/"/>
     
-    <category term="Recommender Systems" scheme="http://hanicy.com/tags/Recommender-Systems/"/>
+    <category term="Recommender Systems" scheme="http://sucrose118.xyz/tags/Recommender-Systems/"/>
     
   </entry>
   
   <entry>
     <title>推荐系统中的图神经网路</title>
-    <link href="http://hanicy.com/2022/03/14/gcn/"/>
-    <id>http://hanicy.com/2022/03/14/gcn/</id>
+    <link href="http://sucrose118.xyz/2022/03/14/gcn/"/>
+    <id>http://sucrose118.xyz/2022/03/14/gcn/</id>
     <published>2022-03-14T07:18:05.000Z</published>
     <updated>2022-04-13T09:06:59.262Z</updated>
     
@@ -158,17 +158,17 @@
     
     
     
-    <category term="lab" scheme="http://hanicy.com/categories/lab/"/>
+    <category term="lab" scheme="http://sucrose118.xyz/categories/lab/"/>
     
     
-    <category term="dl" scheme="http://hanicy.com/tags/dl/"/>
+    <category term="dl" scheme="http://sucrose118.xyz/tags/dl/"/>
     
   </entry>
   
   <entry>
     <title>android（一）应用基础知识</title>
-    <link href="http://hanicy.com/2022/01/09/android/"/>
-    <id>http://hanicy.com/2022/01/09/android/</id>
+    <link href="http://sucrose118.xyz/2022/01/09/android/"/>
+    <id>http://sucrose118.xyz/2022/01/09/android/</id>
     <published>2022-01-09T07:17:27.000Z</published>
     <updated>2022-01-10T11:00:08.807Z</updated>
     
@@ -185,19 +185,19 @@
     
     
     
-    <category term="cs" scheme="http://hanicy.com/categories/cs/"/>
+    <category term="cs" scheme="http://sucrose118.xyz/categories/cs/"/>
     
-    <category term="android" scheme="http://hanicy.com/categories/cs/android/"/>
+    <category term="android" scheme="http://sucrose118.xyz/categories/cs/android/"/>
     
     
-    <category term="android" scheme="http://hanicy.com/tags/android/"/>
+    <category term="android" scheme="http://sucrose118.xyz/tags/android/"/>
     
   </entry>
   
   <entry>
     <title>c#</title>
-    <link href="http://hanicy.com/2021/11/11/c-sharp/"/>
-    <id>http://hanicy.com/2021/11/11/c-sharp/</id>
+    <link href="http://sucrose118.xyz/2021/11/11/c-sharp/"/>
+    <id>http://sucrose118.xyz/2021/11/11/c-sharp/</id>
     <published>2021-11-11T02:26:59.000Z</published>
     <updated>2022-01-05T09:54:48.960Z</updated>
     
@@ -216,17 +216,17 @@
     
     
     
-    <category term="lab" scheme="http://hanicy.com/categories/lab/"/>
+    <category term="lab" scheme="http://sucrose118.xyz/categories/lab/"/>
     
     
-    <category term="C#" scheme="http://hanicy.com/tags/C/"/>
+    <category term="C#" scheme="http://sucrose118.xyz/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>Web技术之CSS</title>
-    <link href="http://hanicy.com/2021/10/06/Web%E6%8A%80%E6%9C%AF%E4%B9%8BCSS/"/>
-    <id>http://hanicy.com/2021/10/06/Web%E6%8A%80%E6%9C%AF%E4%B9%8BCSS/</id>
+    <link href="http://sucrose118.xyz/2021/10/06/Web%E6%8A%80%E6%9C%AF%E4%B9%8BCSS/"/>
+    <id>http://sucrose118.xyz/2021/10/06/Web%E6%8A%80%E6%9C%AF%E4%B9%8BCSS/</id>
     <published>2021-10-06T08:25:57.000Z</published>
     <updated>2021-11-08T09:09:07.661Z</updated>
     
@@ -237,19 +237,19 @@
     
     
     
-    <category term="cs" scheme="http://hanicy.com/categories/cs/"/>
+    <category term="cs" scheme="http://sucrose118.xyz/categories/cs/"/>
     
     
-    <category term="Web" scheme="http://hanicy.com/tags/Web/"/>
+    <category term="Web" scheme="http://sucrose118.xyz/tags/Web/"/>
     
-    <category term="CSS" scheme="http://hanicy.com/tags/CSS/"/>
+    <category term="CSS" scheme="http://sucrose118.xyz/tags/CSS/"/>
     
   </entry>
   
   <entry>
     <title>Web技术之HTML</title>
-    <link href="http://hanicy.com/2021/09/28/Web%E6%8A%80%E6%9C%AF%E4%B9%8BHTML/"/>
-    <id>http://hanicy.com/2021/09/28/Web%E6%8A%80%E6%9C%AF%E4%B9%8BHTML/</id>
+    <link href="http://sucrose118.xyz/2021/09/28/Web%E6%8A%80%E6%9C%AF%E4%B9%8BHTML/"/>
+    <id>http://sucrose118.xyz/2021/09/28/Web%E6%8A%80%E6%9C%AF%E4%B9%8BHTML/</id>
     <published>2021-09-28T08:12:13.000Z</published>
     <updated>2021-11-21T07:58:37.301Z</updated>
     
@@ -261,14 +261,14 @@
     
     
     
-    <category term="HTML" scheme="http://hanicy.com/tags/HTML/"/>
+    <category term="HTML" scheme="http://sucrose118.xyz/tags/HTML/"/>
     
   </entry>
   
   <entry>
     <title>python数值运算（一）NumPy</title>
-    <link href="http://hanicy.com/2021/08/19/numpy/"/>
-    <id>http://hanicy.com/2021/08/19/numpy/</id>
+    <link href="http://sucrose118.xyz/2021/08/19/numpy/"/>
+    <id>http://sucrose118.xyz/2021/08/19/numpy/</id>
     <published>2021-08-19T08:26:30.000Z</published>
     <updated>2021-08-20T06:31:13.665Z</updated>
     
@@ -287,7 +287,7 @@
     
     
     
-    <category term="python" scheme="http://hanicy.com/tags/python/"/>
+    <category term="python" scheme="http://sucrose118.xyz/tags/python/"/>
     
   </entry>
   
